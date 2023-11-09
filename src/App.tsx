@@ -139,7 +139,7 @@ function App() {
             }
           />
         </Route>
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="*" element={<Navigate to="/list" />} />
       </Routes>
     </Container>
   );

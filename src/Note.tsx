@@ -35,7 +35,7 @@ export function Note({ onDelete }: NoteProps) {
               // onClick={() => setEditTagsModalIsOpen(true)}
               variant="outline-danger fw-bold"
               onClick={() => {
-                onDelete(note.id), navigate("/");
+                onDelete(note.id), navigate("/list");
               }}
             >
               Delete

@@ -32,7 +32,7 @@ export function NoteForm({
       markdown: markdownRef.current!.value,
       tags: selectedTags,
     });
-    navigate("..");
+    navigate("/list");
   }
 
   return (
