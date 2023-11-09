@@ -102,10 +102,7 @@ function App() {
   return (
     <Container className="my-4">
       <Routes>
-        <Route
-          path="/"
-          element={<LandingPage />}
-        />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<About />} />
         <Route
           path="/list"

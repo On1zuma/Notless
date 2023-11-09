@@ -62,9 +62,7 @@ export function NoteList({
     <>
       <Row className="align-items-center mb-4">
         <Col>
-          <h1 className="fw-bold">
-            📝NotLess
-          </h1>
+          <h1 className="fw-bold">📝NotLess</h1>
         </Col>
         <Col xs="auto">
           <Stack gap={2} direction="horizontal">

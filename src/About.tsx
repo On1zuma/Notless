@@ -1,7 +1,6 @@
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-
 export function About() {
   return (
     <div className=" text-secondary px-4 py-5 text-center">
@@ -18,10 +17,7 @@ export function About() {
           </p>
           <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
             <Link to="/list">
-              <Button
-                type="button"
-                variant="dark btn-lg px-4 me-sm-3 fw-bold"
-              >
+              <Button type="button" variant="dark btn-lg px-4 me-sm-3 fw-bold">
                 Click to try
               </Button>
             </Link>
@@ -32,6 +28,14 @@ export function About() {
                 variant="outline-secondary btn-lg px-4 me-sm-3 fw-bold"
               >
                 Home
+              </Button>
+            </Link>
+            <Link to="https://github.com/On1zuma/Notless">
+              <Button
+                type="button"
+                variant="outline-info btn-lg px-4 me-sm-3 fw-bold"
+              >
+                Github
               </Button>
             </Link>
           </div>

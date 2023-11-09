@@ -35,18 +35,13 @@ export function Note({ onDelete }: NoteProps) {
               // onClick={() => setEditTagsModalIsOpen(true)}
               variant="outline-danger fw-bold"
               onClick={() => {
-                onDelete(note.id), 
-                navigate("/")
+                onDelete(note.id), navigate("/");
               }}
             >
               Delete
             </Button>
             <Link to="/list">
-              <Button
-                variant="outline-secondary fw-bold"
-              >
-                Back
-              </Button>
+              <Button variant="outline-secondary fw-bold">Back</Button>
             </Link>
           </Stack>
         </Col>
