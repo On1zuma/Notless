@@ -85,11 +85,11 @@ export function NoteForm({
         </Form.Group>
 
         <Stack direction="horizontal" gap={2} className="justify-content-end">
-          <Button type="submit" variant="dark">
+          <Button type="submit" variant="dark fw-bold">
             Save
           </Button>
-          <Link to="..">
-            <Button type="button" variant="outline-secondary">
+          <Link to="/list">
+            <Button type="button" variant="outline-secondary fw-bold">
               Cancel
             </Button>
           </Link>

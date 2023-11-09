@@ -15,7 +15,7 @@ export function Note({ onDelete }: NoteProps) {
     <>
       <Row className="align-items-center mb-4">
         <Col>
-          <h1>{note.title}</h1>
+          <h1 className="fw-bold">{note.title}</h1>
           {note.tags.length > 0 && (
             <Stack gap={1} direction="horizontal" className="flex-wrap">
               {note.tags.map((tag) => (
@@ -29,11 +29,11 @@ export function Note({ onDelete }: NoteProps) {
         <Col xs="auto">
           <Stack gap={2} direction="horizontal">
             <Link to={`/${note.id}/edit`}>
-              <Button variant="dark">Edit</Button>
+              <Button variant="dark fw-bold">Edit</Button>
             </Link>
             <Button
               // onClick={() => setEditTagsModalIsOpen(true)}
-              variant="outline-danger"
+              variant="outline-danger fw-bold"
               onClick={() => {
                 onDelete(note.id), 
                 navigate("/")
@@ -41,9 +41,9 @@ export function Note({ onDelete }: NoteProps) {
             >
               Delete
             </Button>
-            <Link to="/">
+            <Link to="/list">
               <Button
-                variant="outline-secondary"
+                variant="outline-secondary fw-bold"
               >
                 Back
               </Button>

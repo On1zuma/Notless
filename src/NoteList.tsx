@@ -62,18 +62,18 @@ export function NoteList({
     <>
       <Row className="align-items-center mb-4">
         <Col>
-          <h1 className="font-weight-bold">
+          <h1 className="fw-bold">
             📝NotLess
           </h1>
         </Col>
         <Col xs="auto">
           <Stack gap={2} direction="horizontal">
             <Link to="/new">
-              <Button variant="dark">Create</Button>
+              <Button variant="dark fw-bold">Create</Button>
             </Link>
             <Button
               onClick={() => setEditTagsModalIsOpen(true)}
-              variant="outline-secondary"
+              variant="outline-secondary fw-bold"
             >
               Edit Tags
             </Button>

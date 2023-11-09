@@ -9,6 +9,8 @@ import { NoteList } from "./NoteList";
 import { NoteLayout } from "./NoteLayout";
 import { Note } from "./Note";
 import { EditNote } from "./EditNote";
+import { LandingPage } from "./LandingPage";
+import { About } from "./About";
 
 export type Note = {
   id: string;
@@ -102,7 +104,19 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={<NoteList notes={notesWithTags} availableTags={tags} onUpdateTag={updateTag} onDeleteTag={deleteTag} />}
+          element={<LandingPage />}
+        />
+        <Route path="/about" element={<About />} />
+        <Route
+          path="/list"
+          element={
+            <NoteList
+              notes={notesWithTags}
+              availableTags={tags}
+              onUpdateTag={updateTag}
+              onDeleteTag={deleteTag}
+            />
+          }
         />
         <Route
           path="/new"
