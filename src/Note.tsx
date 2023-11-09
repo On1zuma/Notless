@@ -29,7 +29,7 @@ export function Note({ onDelete }: NoteProps) {
         <Col xs="auto">
           <Stack gap={2} direction="horizontal">
             <Link to={`/${note.id}/edit`}>
-              <Button variant="primary">Edit</Button>
+              <Button variant="dark">Edit</Button>
             </Link>
             <Button
               // onClick={() => setEditTagsModalIsOpen(true)}
